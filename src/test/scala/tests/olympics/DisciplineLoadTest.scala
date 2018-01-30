@@ -22,7 +22,7 @@ class DisciplineLoadTest extends Simulation {
   val headers_0 = Map("Expect" -> "100-continue")
 
   val AllDisciplines: ScenarioBuilder = scenario("tests.olympics.DisciplineLoadTest")
-    .exec(http("request_1")
+    .exec(http("AllRequest")
       .get(baseUrl + endpointPrefix + testEndpoint)
       .headers(headers_0)
       .check(status.is(200),
@@ -48,7 +48,7 @@ class DisciplineLoadTest extends Simulation {
 
   val SpecDiscipline: ScenarioBuilder = scenario("DisciplineDetailedLoadTest")
   fetchDisciplines
-    .exec(http("request_3")
+    .exec(http("SpecRequest")
       .get(baseUrl + endpointPrefix + testEndpoint)
       .headers(headers_0)
       .check(status.is(200)
