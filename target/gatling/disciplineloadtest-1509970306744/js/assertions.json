@@ -1,0 +1,10 @@
+{
+  "simulation": "DisciplineLoadTest",
+  "simulationId": "disciplineloadtest",
+  "start": 1509970306744,
+  "description": "",
+  "scenarios": ["DisciplineLoadTest"],
+  "assertions": [
+
+  ]
+}
